@@ -15,10 +15,11 @@ body {
     border: 2px solid #222;
     border-radius: .5rem;
     margin: 1rem;
-    display: flex;
+    display: grid;
     padding: 1rem;
     box-sizing: border-box;
-
+    grid-template-columns: repeat(5, 1rem);
+    grid-template-rows: repeat(5, 1rem);
     /* HÄR KODAR DU UPP DIN GRID */
 }
 
@@ -27,133 +28,132 @@ body {
 }
 
 .dice aside {
-    background: #222;
-    border-radius: 99rem;
-    display: none;
+    background: none;
+    border-radius: 50%;
 }
 
 .dice.dots-1 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: black;
 }
 
 .dice.dots-2 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-2 aside:nth-child(2) {
-    display: block;
- 
-    
+    grid-column: 5/6;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-3 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: black;
 }
 
 .dice.dots-3 aside:nth-child(2) {
-    display: block;
-
-    
+    grid-column: 3/4;
+        grid-row: 3/4;
+        background-color: black;
 }
 
 .dice.dots-3 aside:nth-child(3) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-4 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-4 aside:nth-child(2) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-4 aside:nth-child(3) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-4 aside:nth-child(4) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-5 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-5 aside:nth-child(2) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-5 aside:nth-child(3) {
-    display: block;
-
-    
+    grid-column: 3/4;
+        grid-row: 3/4;
+        background-color: black;
 }
 
 .dice.dots-5 aside:nth-child(4) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-5 aside:nth-child(5) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(1) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(2) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 1/2;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(3) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(4) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 3/4;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(5) {
-    display: block;
-
-    
+    grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: black;
 }
 
 .dice.dots-6 aside:nth-child(6) {
-    display: block;
-
-    
+    grid-column: 5/6;
+        grid-row: 5/6;
+        background-color: black;
 }
