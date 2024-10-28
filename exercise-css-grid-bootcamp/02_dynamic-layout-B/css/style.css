@@ -12,8 +12,19 @@ body {
     margin: 2rem auto;
     max-width: 800px;
     width: 100%;
-
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 3rem 16rem 36rem 12rem 12rem 12rem;
     /* HÄR KODAR DU UPP DIN GRID */
+    grid-template-areas: 
+    'nav nav nav nav nav nav nav nav nav nav nav nav'
+    'header header header header header header header header header header header header'
+    'main main main main main main main main aside aside aside aside'
+    'a a a a b b b b c c c c'
+    'd d d e e e f f f g g g'
+    'footer footer footer footer footer footer footer footer footer footer footer footer'
+    ;
     
 }
 
@@ -26,12 +37,12 @@ body {
 
 
 nav {
-
+    grid-area: nav;
     
 }
 
 header {
-
+    grid-area: header;
     
 }
 
@@ -55,33 +66,33 @@ main article {
 }
 
 aside {
-
+    grid-area: aside;
     
 }
 
 .sect-a {
-    
+    grid-area: a;
 }
 .sect-b {
-    
+    grid-area: b;
 }
 .sect-c {
-    
+    grid-area: c;
 }
 .sect-d {
-
+    grid-area: d;
 }
 .sect-e {
-
+    grid-area: e;
 }
 .sect-f {
-
+    grid-area: f;
 }
 .sect-g {
-
+    grid-area: g;
 }
 
 footer {
-
+    grid-area: footer;
     
 }
