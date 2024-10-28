@@ -14,7 +14,9 @@ body {
     display: grid;
     max-width: 800px;
     width: 100%;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 60px;
+    gap: 1rem;
     /* HÄR KODAR DU UPP DIN GRID */
 
 }
@@ -27,27 +29,31 @@ body {
 }
 
 header {
-
-    
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
 
 nav {
-
+    grid-column: 1/4;
+        grid-row: 4/5;
     
 }
 
 main {
-
+    grid-column: 1/3;
+        grid-row: 5/10;
     
 }
 
 aside {
-
+    grid-column: 3/4;
+        grid-row: 5/10;
     
 }
 
 footer {
-
+    grid-column: 1/4;
+        grid-row: 10/12;
     
 }
 
