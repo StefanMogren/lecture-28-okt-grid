@@ -12,7 +12,10 @@ body {
     margin: 2rem auto;
     max-width: 800px;
     width: 100%;
-
+    display: grid;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    grid-template-columns: repeat(12, 1fr);
     /* HÄR KODAR DU UPP DIN GRID */
 
 }
@@ -26,14 +29,14 @@ body {
 
 nav {
     height: 3rem;
-
+    grid-column: auto / span 12;
     /* Här behövs grid-grejjer */
 
 }
 
 header {
     height: 16rem;
-
+    grid-column: auto / span 12;
     /* Här behövs grid-grejjer */
 
 }
@@ -44,7 +47,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     background: rgba(255, 40, 40, .6) !important;
-
+    grid-column: auto / span 8;
     /* Här behövs grid-grejjer */
 }
 
@@ -59,27 +62,27 @@ main article {
 }
 
 aside {
-    
+    grid-column: auto / span 4;
     
 }
 
 section.col-4 {
     height: 12rem;
-
+    grid-column: auto / span 4;
     /* Här behövs grid-grejjer */
 
 }
 
 section.col-3 {
     height: 12rem;
-
+    grid-column: auto / span 3;
     /* Här behövs grid-grejjer */
 
 }
 
 footer {
     height: 12rem;
-    
+    grid-column: auto / span 12;
     /* Här behövs grid-grejjer */
 
 }
