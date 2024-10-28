@@ -15,11 +15,13 @@ body {
     border: 2px solid #222;
     border-radius: .5rem;
     margin: 1rem;
-    display: flex;
+    display: grid;
     padding: 1rem;
-
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1rem);
+    grid-template-rows: repeat(3, 1rem);
     /* HÄR KODAR DU UPP DIN GRID */
-
+    
 }
 
 .dice.faded {
@@ -32,50 +34,74 @@ body {
 }
 
 .dice aside:nth-child(1) { 
-    
+    grid-area: one;
 }
 .dice aside:nth-child(2) {
-    
+    grid-area: two;
 }
 .dice aside:nth-child(3) {
-    
+    grid-area: three;
 }
 .dice aside:nth-child(4) {
-    
+    grid-area: four;
 }
 .dice aside:nth-child(5) {
-    
+    grid-area: five;
 }
 .dice aside:nth-child(6) {
-    
+    grid-area: six;
 }
 
 .dice.dots-1 {
-
+    grid-template-areas:
+    '. . .'
+    '. one .'
+    '. . .'
+    ;
     
 }
 
 .dice.dots-2 {
-
+    grid-template-areas:
+    'one . .'
+    '. . .'
+    '. . two'
+    ;
     
 }
 
 .dice.dots-3 {
-
+    grid-template-areas:
+    'one . .'
+    '. two .'
+    '. . three'
+    ;
     
 }
 
 .dice.dots-4 {
-
+    grid-template-areas:
+    'one . two'
+    '. . .'
+    'three . four'
+    ;
     
 }
 
 .dice.dots-5 {
-
+    grid-template-areas:
+    'one . two'
+    '. five .'
+    'three . four'
+    ;
     
 }
 
 .dice.dots-6 {
-
+    grid-template-areas:
+    'one . two'
+    'three . four'
+    'five . six'
+    ;
     
 }
