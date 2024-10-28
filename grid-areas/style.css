@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding: 1rem;
+    /* fractions är typ som flex: grow så man kan dela upp skärmen i relation till varandra
+    grid-template-columns: 1fr 3fr 6fr 2fr 4fr 4fr; */
+    
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 120px auto 120px;
+    
+    grid-template-areas: 
+    'aside aside aside aside aside aside'
+    'main main main main header header'
+    'footer footer footer footer footer footer'
+    ;
+}
+
+header {
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+
+main {
+    background-color: rgb(158, 61, 61);
+    grid-area: main;
+}
+
+
+aside {
+    background-color: rgb(116, 49, 223);
+    grid-area: aside;
+}
+
+
+footer{
+    background-color: rgb(218, 228, 133);
+    grid-area: footer;
+}
