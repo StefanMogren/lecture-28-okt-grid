@@ -12,9 +12,12 @@ body {
     margin: 2rem auto;
     max-width: 800px;
     width: 100%;
-
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7);
     /* HÄR KODAR DU UPP DIN GRID */
-
+    
 }
 
 .wrapper > * {
@@ -26,16 +29,18 @@ body {
 
 nav {
     height: 3rem;
-
+    grid-column: auto / span 12;
+    grid-row: auto /span 1;
     /* Här behövs det grid-grejjer */
-
+    
 }
 
 header {
     height: 16rem;
-    
+    grid-column: auto / span 12;
+    grid-row: auto /span 1;
     /* Här behövs det grid-grejjer */
-
+    
 }
 
 
@@ -44,9 +49,9 @@ main {
     flex-direction: column;
     align-items: flex-start;
     background: rgba(255, 40, 40, .6) !important;
-
+    grid-column: auto / span 8;
     /* Här behövs det grid-grejjer */
-
+    
 }
 
 main article {
@@ -65,9 +70,9 @@ aside {
     justify-content: flex-start !important;
     align-items: flex-start;
     background: rgba(255, 234, 40, 0.6) !important;
-
+    grid-column: auto / span 4;
     /* Här behövs det grid-grejjer */
-
+    
 }
 
 aside article {
@@ -82,17 +87,21 @@ aside article {
 
 article.big {
     height: 12rem;
-
+    grid-column: auto / span 6;
     /* Här behövs det grid-grejjer */
     
 }
 
 .gallery {
     background: rgba(40, 255, 130, 0.6);
-
+    grid-column: auto / span 12;
+    height: 25rem;
+    padding: 0.5rem;
     /* Här behövs det grid-grejjer */
-
-
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
     /* HÄR KODAR DU DESSUTOM UPP DIN GRID FÖR GALLERIET */
     
 }
@@ -100,14 +109,15 @@ article.big {
 .gallery .img {
     background: rgba(190, 190, 190, 1);
     height: 100%;
+        grid-column: auto / span 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer {
+    grid-column: auto / span 12;
     height: 12rem;
-
     /* Här behövs det grid-grejjer */
-
+    
 }
