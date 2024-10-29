@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #EEE;
+    height: 100vh;
+    background: rgb(225, 225, 225);
+}
+
+.calendar {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+header {
+    padding: 1rem;
+    justify-content: space-between;
+    background: rgb(255, 44, 44);
+    color: white;
+    display: flex;
+    grid-column: auto / span 1;
+    grid-row: auto / span 1;
+}
+
+.labels {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid rgb(225, 225, 225);;
+    
+    p {
+        background-color: rgb(204, 204, 204);
+        grid-column: auto / span 1;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+main {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    aside {
+        display: flex;
+        background: rgba(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        /* border: 1px solid rgba(134, 134, 134, 0.589); */
+    }
+}
+
+.past, .future {
+    color: rgb(153, 153, 153);
+}
+
+.weekend {
+    background-color: rgb(242, 242, 242);
+}
