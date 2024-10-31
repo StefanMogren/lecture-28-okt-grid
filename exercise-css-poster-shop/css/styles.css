@@ -1,24 +1,26 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Simple flexbox to place hamburger menu in top left and the h1 and image in the center. */
 header {
+    height: 30rem;
     display: flex;
     flex-direction: column;
-    height: 30rem;
     align-items: center;
     justify-content: space-between;
     background: rgb(61, 224, 126);
     
     aside {
-        align-self: flex-start;
         margin: 2rem;
+        align-self: flex-start;
     }
     
     h1 {
@@ -27,8 +29,8 @@ header {
 }
 
 main {
-    background: black;
     padding: 4rem 8rem;
+    background: black;
     color: white;
 }
 
@@ -39,51 +41,69 @@ main {
     gap: 2rem;
 }
 
-.card {
-    grid-column: auto / span 2;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-    img {
-        width: 100%
-    }
-
-    p {
-        margin-bottom: 2rem;
-    }
-
-}
-
-.big-card {
-    grid-column: auto / span 3;
-    background: white;
-    color: black;
-
-    img {
-        width: 100%;
-    }
-
-    section {
-        margin: 1rem;
-    }
-}
-
 h2 {
     margin: 1rem 0;
 }
 
 .button {
-    background: rgb(232, 63, 87);
     width: 150px;
+    margin-top: auto;
     padding: 0.5rem;
-    color: white;
     border: none;
     border-radius: 5px;
-    margin-top: auto;
+    background: rgb(232, 63, 87);
+    color: white;
 }
 
+/* Content of the individual cards */
+.card {
+    margin-bottom: 4rem;
+    grid-column: auto / span 2;
+    /* grid-colum since grid affects .card
+    Flexbox to affect its children */
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%
+    }
+    
+    p {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+/* Content of the larger cards */
+.big-card {
+    grid-column: auto / span 3;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+    }
+    
+    h2 {
+        margin: 1rem;
+    }
+    
+    .button {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+
+
+
+
+/* The footer at the bottom */
 footer {
-    padding: 4rem 6rem;
+    padding: 4rem 8rem;
     background: rgb(51, 51, 51);
     color: white;
     
@@ -96,7 +116,7 @@ footer {
 .footer-links {
     display: flex;
     justify-content: space-between;
-
+    
     nav {
         display: flex;
         flex-direction: column;
